@@ -1,4 +1,5 @@
-/**
+'use strict';
+ /**
  
  ** Exercise 3: The logo hijack **
  
@@ -13,7 +14,10 @@
  */
 
 function hijackGoogleLogo() {
-  // your code goes in here
+  let logo = document.getElementsByTagName('img');
+  let hyfLogo = 'https://www.hackyourfuture.dk/static/logo-dark.svg';
+  logo[0].src = hyfLogo;
+  logo[0].srcset = hyfLogo;
 }
 
-hijackGoogleLogo();
+hijackGoogleLogo()

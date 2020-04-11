@@ -9,3 +9,17 @@
  5. See HTML
  6. Create a new img element and set its src attribute to a picture of you.Append that element to the page.
  */
+let Body = document.querySelector('body');
+let span1 = document.getElementById('nickname');
+let span2 = document.getElementById('fav-food');
+let span3 = document.getElementById('hometown');
+let li = document.getElementsByTagName('li');
+let ul = document.getElementsByTagName('ul');
+let img = document.createElement('img')
+
+li.className = 'list-item';
+span1.innerHTML = 'Al-Mosto';
+span2.innerHTML = 'Kubbeh';
+span3.innerHTML = 'Idleb';
+img.src = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
+Body.appendChild(img);

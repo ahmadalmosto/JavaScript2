@@ -1,3 +1,4 @@
+"use strict"
 /**
   
  ** Exercise 1: The book list **
@@ -17,26 +18,65 @@
   */
 
 function createBookList(books) {
-  // your code goes in here, return the ul element
+  for (let i = 0; i < books.length; i++) {
+    books[i];
+    let bookList = document.getElementById('bookList');
+    let p = document.createElement('p');
+    let li = document.createElement('li');
+    let ul = document.createElement('ul');
+    let img = document.createElement('img');
+    let h1 = document.createElement('h1');
+
+    let book1 = books[i];
+    bookList.appendChild(ul);
+    ul.appendChild(li);
+    li.appendChild(p);
+    p.innerHTML = book1.title + '-' + book1.author;
+    li.appendChild(img);
+    img.src = book1.link;
+    // set the style
+    bookList.style.display = 'flex';
+    bookList.style.flexDirection = 'row';
+    bookList.style.flexWrap = 'wrap';
+    img.style.width = '300px';
+    img.style.height = '300px';
+    li.style.listStyleType = 'none';
+    li.style.color = 'white';
+   // condition to choose color based on if you reade it or not
+    if (book1.alreadyRead === true) {
+      li.style.backgroundColor = 'green';
+    } else {
+      li.style.backgroundColor = 'red';
+    }
+
+    console.log(ul);
+  }
 }
 
-const books = [{
+const books = [
+  {
     title: 'The Design of Everyday Things',
     author: 'Don Norman',
-    alreadyRead: false
+    alreadyRead: false,
+    link: 'https://k.top4top.io/p_15580ke151.jpg',
   },
   {
     title: 'The Most Human Human',
     author: 'Brian Christian',
-    alreadyRead: true
+    alreadyRead: true,
+    link: 'https://a.top4top.io/p_1558mbrc51.jpeg',
   },
   {
     title: 'The Pragmatic Programmer',
     author: 'Andrew Hunt',
-    alreadyRead: true
-  }
+    alreadyRead: true,
+    link: 'https://upload.wikimedia.org/wikipedia/en/8/8f/The_pragmatic_programmer.jpg',
+  },
 ];
+
+// console.log(books[1]);
+// console.log(books[2]);
 
 let ulElement = createBookList(books);
 
-document.querySelector("#bookList").appendChild(ulElement);
+document.querySelector('#bookList').appendChild(ulElement);
