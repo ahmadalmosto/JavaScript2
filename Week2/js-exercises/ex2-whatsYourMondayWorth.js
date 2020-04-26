@@ -13,7 +13,19 @@
 
 
 function dayWorth(tasks, hourlyRate) {
+  let result = 0;
   // put your code in here, the function does returns a euro formatted string
+  const durationTime = mondayTasks.reduce(function(total,num){
+    
+   // let itemDuration = item.duration;
+   return result+=num.duration;
+  //  console.log(result);
+  },0);
+  let hour = result / 60;
+  let lastbill = hour*hourlyRate;
+  //lastbill.toPrecision(2);
+  return  '€'+lastbill ;
+
 }
 
 const mondayTasks = [{
@@ -36,3 +48,4 @@ const mondayTasks = [{
 
 console.log(dayWorth(mondayTasks, 25))
 console.log(dayWorth(mondayTasks, 13.37))
+console.log(dayWorth(mondayTasks, 15))

@@ -9,8 +9,22 @@
  */
 
 function createHTMLList(arr) {
-  // your code goes in here
+  let body = document.querySelector('body')
+  let ul = document.createElement('ul');
+  // let li = document.createElement('li');
+  var hobby = arr.map(function(item){
+    let li = document.createElement('li');
+    body.append(ul);
+    ul.appendChild(li);
+    li.innerHTML= item;
+  return item;
+ 
+  })
+ 
+ return hobby;
 }
+
+ 
 
 const myHobbies = [
   'Meditation',
@@ -19,3 +33,9 @@ const myHobbies = [
   'Hanging out with friends',
   'Going to the gym',
 ];
+console.log(createHTMLList(myHobbies));
+
+
+
+  
+ 

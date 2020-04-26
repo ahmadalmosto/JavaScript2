@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pomodoro Clock</title>
@@ -9,7 +12,25 @@
 
 <body>
   <div id="app">
-
+    <div>
+      <h1>Pomodoro Clock</h1>
+      <h2>Session Length</h2>
+      <div class="firstbtns">
+      
+      <button  id="btnDown" type="button"><i class="fas fa-arrow-down"></i></button>
+      <h2 id="sessionNum">1</h2>
+      <button id="btnUp" type="button"><i class="fas fa-arrow-up"></i></button>
+    </div>
+    </div>
+    <div class="sessionbox">
+      <h2>Session</h2>
+      <!-- <p id="sessionRun">5:00</p> -->
+      <h1 id="sessionRun"><span id="minutes">25</span>:<span id="seconds">00</span></h1>
+    </div>
+    <div class="secondbtns">
+      <button id="btnPlay" type="button"><i class="fas fa-play"></i></button>
+      <button id="btnPause" type="button"><i class="fas fa-stop"></i></button>
+    </div>
   </div>
   <script src="index.js"></script>
 </body>

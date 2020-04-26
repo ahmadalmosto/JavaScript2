@@ -1,0 +1,71 @@
+body {
+    background-color: rgb(31, 85, 92);
+    color: white;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+}
+
+#app {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#sessionRun {
+    font-family: orbitron, sans-serif;
+}
+
+#btnUp,
+#btnDown,
+#btnPlay,
+#btnPause {
+    background-color: rgb(31, 85, 92);
+    margin: 0px 30px 0px 30px;
+    border: none;
+    /* font-size: 20px; */
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+
+#btnPlay,
+#btnPause {
+    margin-top: 10px;
+}
+
+.sessionbox {
+    width: 50%;
+    border-radius: 30px;
+    border: 5px solid rgb(19, 54, 58);
+    text-align: center;
+    font-family: orbitron, sans-serif;
+}
+
+.firstbtns {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 5px;
+    padding: 5px;
+}
+
+h1 {
+    font-size: 31px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h1,
+h2,
+h3 {
+    margin: 15px 0 30px 0;
+    font-weight: normal;
+    line-height: 1.3;
+}
