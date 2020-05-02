@@ -12,10 +12,29 @@ does not return anything but removes any duplicate elements from the array.
 
 
 // WRITE YOUR FUNCTION HERE
+// function removeDuplicates(letters) {
+//   let result = [];
+//   letters.filter((v, i) => {
+//     if (letters.indexOf(v) === i) {
+//      result.push(v);
+//     }
+    
+//   });
+//  return result;
+// }
 
+// function removeDuplicates(letters){
+//   let unique=[...new Set(letters)]
+//   return unique;
+// }
 const letters = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c', 'b'];
 
-removeDuplicates(letter);
+///console.log(removeDuplicates(letters));
+console.log(removeDuplicates(letters));
 
-if (letters === ['a', 'b', 'c', 'd', 'e', 'f'])
-  console.log("Hooray!")
+
+
+// removeDuplicates(letter);
+
+// if (letters === ['a', 'b', 'c', 'd', 'e', 'f'])
+//   console.log("Hooray!")
