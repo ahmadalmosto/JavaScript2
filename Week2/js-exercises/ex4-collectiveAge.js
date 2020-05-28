@@ -42,8 +42,8 @@ let result = 0;
 // }
 //setTimeout(collectiveMembers, 2000);
 function collectiveMembers(hackYourFutureMembers){
- const members= hackYourFutureMembers.map(function (num){
-   result += num.age;
+ const members= hackYourFutureMembers.map(function (member){
+   result += member.age;
   })
   return result;
 }

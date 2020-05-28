@@ -13,13 +13,13 @@
 
 
 function takeOutLemons(basket) {
-  const result=[];
-  // your code goes in here. The output is a string 
-  basket.filter(function(item){
-   if(item !=='Lemon'){
-     result.push(item)
-   }
-  })
+  const result = basket.filter((item) => item !== 'Lemon');
+  // const result=[];
+  // basket.filter(function(item){
+  //  if(item !=='Lemon'){
+  //    result.push(item)
+  //  }
+  // })
   return `My mom bought me a fruit basket, containing ${result}`;
 }
 
