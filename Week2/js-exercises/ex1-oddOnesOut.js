@@ -35,13 +35,15 @@
 // console.log(doubleEvenNumbers(myNumbers)); // Logs "[4, 8]" to the console
 
 function doubleEvenNumbers(numbers) {
+  const result = [];
 const evenNum=numbers.map(function(num){
-  if(num%2===0){
-     return num*2;
+  if (num % 2 === 0) {
+    result.push(num*2)
+     return result;
   }
   
 })
-return evenNum;
+return result;
 }
 const myNumbers = [1, 2, 3, 4];
 console.log(doubleEvenNumbers(myNumbers)); // Logs "[4, 8]" to the console

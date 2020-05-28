@@ -11,7 +11,6 @@
 function createHTMLList(arr) {
   let body = document.querySelector('body')
   let ul = document.createElement('ul');
-  // let li = document.createElement('li');
   var hobby = arr.map(function(item){
     let li = document.createElement('li');
     body.append(ul);

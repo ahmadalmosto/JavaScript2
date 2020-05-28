@@ -10,21 +10,19 @@
  Make sure the function can be used on any array of objects that contain a duration property with a number value
 
  */
-
-
-function dayWorth(tasks, hourlyRate) {
+function dayWorth(mondayTasks, hourlyRate) {
   let result = 0;
   // put your code in here, the function does returns a euro formatted string
-  const durationTime = mondayTasks.reduce(function(total,num){
+  const durationTime = mondayTasks.reduce(function(total,task){
     
    // let itemDuration = item.duration;
-   return result+=num.duration;
+   return result+=task.duration;
   //  console.log(result);
   },0);
   let hour = result / 60;
   let lastbill = hour*hourlyRate;
   //lastbill.toPrecision(2);
-  return  '€'+lastbill ;
+  return  '€'+lastbill.toFixed(1) ;
 
 }
 

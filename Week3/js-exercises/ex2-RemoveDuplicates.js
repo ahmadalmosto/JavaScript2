@@ -9,32 +9,21 @@ does not return anything but removes any duplicate elements from the array.
 
    
  */
-
-
 // WRITE YOUR FUNCTION HERE
-// function removeDuplicates(letters) {
-//   let result = [];
-//   letters.filter((v, i) => {
-//     if (letters.indexOf(v) === i) {
-//      result.push(v);
-//     }
+function removeDuplicates(letters) {
+  let result = [];
+  letters.filter((v, i) => {
+    if (letters.indexOf(v) === i) {
+     result.push(v);
+    }
     
-//   });
-//  return result;
-// }
-
+  });
+ return result;
+}
+const letters = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c', 'b'];
+console.log(removeDuplicates(letters));
+// other way 
 // function removeDuplicates(letters){
 //   let unique=[...new Set(letters)]
 //   return unique;
 // }
-const letters = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c', 'b'];
-
-///console.log(removeDuplicates(letters));
-console.log(removeDuplicates(letters));
-
-
-
-// removeDuplicates(letter);
-
-// if (letters === ['a', 'b', 'c', 'd', 'e', 'f'])
-//   console.log("Hooray!")
